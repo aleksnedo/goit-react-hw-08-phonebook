@@ -1,14 +1,7 @@
 import styled from '@emotion/styled';
-import { NavLink } from 'react-router-dom';
 
-export const Link = styled(NavLink)`
-  display: inline-block;
-  text-decoration: none;
-  padding: 12px;
-  font-weight: 700;
-  color: #2a363b;
-
-  &.active {
-    color: #e84a5f;
-  }
+export const Container = styled.div`
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 16px;
 `;
