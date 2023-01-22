@@ -2,14 +2,14 @@ import styled from '@emotion/styled';
 import { Form, Field } from 'formik';
 
 export const FormStyle = styled(Form)`
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   align-items: center;
   gap: 30px;
   padding: 30px;
   border: 2px solid gray;
   border-radius: 5px;
-  box-shadow: 3px 3px 30px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 30px 3px rgba(0, 0, 0, 0.75); */
 `;
 
 export const Label = styled.label`
@@ -21,8 +21,8 @@ export const Label = styled.label`
 `;
 
 export const Input = styled(Field)`
-  height: 20px;
-  width: 200px;
+  /* height: 20px;
+  width: 200px; */
 `;
 
 export const Button = styled.button`
