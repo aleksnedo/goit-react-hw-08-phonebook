@@ -1,11 +1,11 @@
 import { Loader } from './Loader/Loader';
 import { Layout } from './Layout/Layout';
 
-import { Route, Routes, Navigate } from 'react-router-dom';
 import { RestrictedRoute } from './RestrictedRoute/RestrictedRoute';
 import { PrivateRoute } from './PrivateRoute/PrivateRoute';
 
 import { useEffect, lazy } from 'react';
+import { Route, Routes, Navigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { refreshUser } from 'redux/auth/operations';
 import { useAuth } from 'hooks';

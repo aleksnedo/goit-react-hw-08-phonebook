@@ -5,9 +5,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 `;
 
-export const Banner = styled.div`
+export const Banner = styled.h1`
   font-weight: 600;
   font-size: 50;
+  margin-bottom: 20px;
 `;

@@ -2,8 +2,8 @@ import { useDispatch, useSelector } from 'react-redux';
 import { logIn } from 'redux/auth/operations';
 import { selectLoginError } from 'redux/auth/selectors';
 
-import Alert from '@mui/material/Alert';
-import { Form, Label } from './LoginForm.styled';
+import { Form, Btn, AlertStyle } from './LoginForm.styled';
+import { TextField } from '@mui/material';
 
 export const LoginForm = () => {
   const dispatch = useDispatch();
@@ -23,23 +23,33 @@ export const LoginForm = () => {
   return (
     <>
       <Form onSubmit={handleSubmit} autoComplete="off">
-        <Label>
-          Email
-          <input type="email" name="email" />
-        </Label>
-        <Label>
-          Password
-          <input type="password" name="password" />
-        </Label>
-        <button type="submit">Log In</button>
+        <TextField
+          type="email"
+          name="email"
+          label="Email"
+          variant="outlined"
+          size="small"
+          fullWidth
+          margin="normal"
+        />
+        <TextField
+          type="password"
+          name="password"
+          label="Password"
+          variant="outlined"
+          size="small"
+          fullWidth
+          margin="normal"
+        />
+        <Btn type="submit" variant="contained" fullWidth>
+          Log In
+        </Btn>
       </Form>
       {error && (
-        <p>
-          <Alert variant="filled" severity="error">
-            Something wrong: Check your password and email or may be you are not
-            registered user.
-          </Alert>
-        </p>
+        <AlertStyle variant="filled" severity="error">
+          Something wrong: Check your password and email or may be you are not
+          registered user.
+        </AlertStyle>
       )}
     </>
   );
