@@ -10,12 +10,10 @@ export const ContactEditor = () => {
   const error = useSelector(selectError);
 
   return (
-    <div>
-      <section>
-        <Filter />
-        <Form />
-        {isLoading && !error && <Loader />}
-      </section>
-    </div>
+    <>
+      <Form />
+      {isLoading && !error && <Loader />}
+      <Filter />
+    </>
   );
 };

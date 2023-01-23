@@ -19,8 +19,10 @@ export default function Contacts() {
         <title>Contacts</title>
       </Helmet>
 
-      <ContactEditor />
-      <ContactList />
+      <section>
+        <ContactEditor />
+        <ContactList />
+      </section>
     </>
   );
 }
