@@ -12,9 +12,9 @@ export const ContactEditor = () => {
   return (
     <div>
       <section>
+        <Filter />
         <Form />
         {isLoading && !error && <Loader />}
-        <Filter />
       </section>
     </div>
   );

@@ -1,10 +1,10 @@
 import { Label, Input } from './Filter.styled';
 
 import { useSelector, useDispatch } from 'react-redux';
-import { onChangeFilter } from 'redux/filterSlice';
-import { selectFilter } from 'redux/selectors';
+import { onChangeFilter } from 'redux/contacts/filterSlice';
+import { selectFilter } from 'redux/contacts/selectors';
 
-export default function Filter() {
+export const Filter = () => {
   const dispatch = useDispatch();
   const { filter } = useSelector(selectFilter);
 
@@ -23,4 +23,4 @@ export default function Filter() {
       />
     </Label>
   );
-}
+};

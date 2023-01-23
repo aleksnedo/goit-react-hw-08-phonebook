@@ -1,5 +1,6 @@
 import styled from '@emotion/styled';
 import { Form, Field } from 'formik';
+import { Button } from '@mui/material';
 
 export const FormStyle = styled(Form)`
   /* display: flex;
@@ -25,7 +26,7 @@ export const Input = styled(Field)`
   width: 200px; */
 `;
 
-export const Button = styled.button`
+export const ButtonAdd = styled(Button)`
   font-size: 14px;
   font-weight: 600;
   text-transform: uppercase;

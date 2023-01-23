@@ -1,5 +1,5 @@
 import { Formik } from 'formik';
-import { FormStyle, Label, Input, Button } from './Form.styled';
+import { FormStyle, Label, Input, ButtonAdd } from './Form.styled';
 import { TextField } from 'formik-mui';
 
 import { useSelector, useDispatch } from 'react-redux';
@@ -74,7 +74,7 @@ export const Form = () => {
           />
         </Label>
 
-        <Button type="submit">Add Contact</Button>
+        <ButtonAdd type="submit">Add Contact</ButtonAdd>
       </FormStyle>
     </Formik>
   );
