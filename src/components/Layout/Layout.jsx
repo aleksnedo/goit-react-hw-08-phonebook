@@ -16,10 +16,10 @@ export const Layout = () => {
         position="top-center"
         reverseOrder={false}
         toastOptions={{
-          duration: 3000,
+          duration: 4000,
           error: {
             style: {
-              border: '1px solid black',
+              border: '2px solid #1976d2',
             },
           },
         }}

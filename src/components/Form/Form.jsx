@@ -14,7 +14,9 @@ export const Form = () => {
   const handleSubmit = (values, { resetForm }) => {
     const dublicateContact = findDublicate(values, contactsList);
     dublicateContact
-      ? toast.error(`${values.name} or ${values.number} is already in contacts`)
+      ? toast.error(
+          `Name "${values.name}" or Number "${values.number}" is already in your contacts`
+        )
       : dispatch(addContact(values));
 
     resetForm();

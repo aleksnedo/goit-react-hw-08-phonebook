@@ -1,5 +1,5 @@
 import styled from '@emotion/styled';
-import { Button } from '@mui/material';
+import { Button, Alert } from '@mui/material';
 
 export const Form = styled.form`
   width: 320px;
@@ -17,5 +17,9 @@ export const Label = styled.label`
 `;
 
 export const Btn = styled(Button)`
+  margin-top: 20px;
+`;
+
+export const AlertStyle = styled(Alert)`
   margin-top: 20px;
 `;

@@ -7,6 +7,7 @@ const initialState = {
   isLoggedIn: false,
   isRefreshing: false,
   loginError: false,
+  registerError: false,
 };
 
 const authUserReducer = (state, action) => {
@@ -39,6 +40,9 @@ const authSlice = createSlice({
       })
       .addCase(refreshUser.rejected, state => {
         state.isRefreshing = false;
+      })
+      .addCase(register.rejected, state => {
+        state.registerError = true;
       })
       .addMatcher(
         isAnyOf(register.fulfilled, logIn.fulfilled),

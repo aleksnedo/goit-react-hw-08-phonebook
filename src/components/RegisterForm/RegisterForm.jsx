@@ -1,11 +1,13 @@
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { register } from 'redux/auth/operations';
+import { selectRegisterError } from 'redux/auth/selectors';
 
-import { Form, Btn } from './RegisterForm.styled';
+import { Form, Btn, AlertStyle } from './RegisterForm.styled';
 import { TextField } from '@mui/material';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
+  const error = useSelector(selectRegisterError);
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -49,10 +51,17 @@ export const RegisterForm = () => {
           fullWidth
           margin="normal"
         />
+
         <Btn type="submit" variant="contained" fullWidth>
           Register
         </Btn>
       </Form>
+      {error && (
+        <AlertStyle variant="outlined" severity="error">
+          Something wrong: Maybe a user with the same name or email already
+          exists.
+        </AlertStyle>
+      )}
     </>
   );
 };
