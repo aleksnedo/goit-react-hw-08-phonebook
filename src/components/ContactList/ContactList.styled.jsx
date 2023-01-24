@@ -1,4 +1,16 @@
 import styled from '@emotion/styled';
+import { Button } from '@mui/material';
+
+export const Wrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.75);
+  width: 500px;
+`;
 
 export const List = styled.ul`
   display: flex;
@@ -8,6 +20,7 @@ export const List = styled.ul`
 
 export const Item = styled.li`
   display: flex;
+  align-items: center;
   justify-content: space-between;
   gap: 50px;
 `;
@@ -17,19 +30,10 @@ export const Name = styled.p`
   font-weight: 600;
 `;
 export const Number = styled.span`
-  color: gray;
+  color: #1976d2;
 `;
 
-export const Button = styled.button`
-  border: none;
-  border-radius: 10px;
-  cursor: pointer;
-  color: white;
-  background-color: #4d4c4c;
-  padding: 5px;
+export const Btn = styled(Button)`
+  font-size: 12px;
   width: 70px;
-  transition: scale 100ms cubic-bezier(0.455, 0.03, 0.515, 0.5);
-  &:active {
-    scale: 0.9;
-  }
 `;

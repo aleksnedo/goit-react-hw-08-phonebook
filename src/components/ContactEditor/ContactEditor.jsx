@@ -12,8 +12,8 @@ export const ContactEditor = () => {
   return (
     <>
       <Form />
-      {isLoading && !error && <Loader />}
       <Filter />
+      {isLoading && !error && <Loader />}
     </>
   );
 };

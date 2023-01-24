@@ -6,6 +6,8 @@ import { ContactEditor } from 'components/ContactEditor/ContactEditor';
 import { ContactList } from 'components/ContactList/ContactList';
 import { fetchContacts } from 'redux/contacts/operations';
 
+import { Section } from './Contacts.styled';
+
 export default function Contacts() {
   const dispatch = useDispatch();
 
@@ -19,10 +21,10 @@ export default function Contacts() {
         <title>Contacts</title>
       </Helmet>
 
-      <section>
+      <Section>
         <ContactEditor />
         <ContactList />
-      </section>
+      </Section>
     </>
   );
 }

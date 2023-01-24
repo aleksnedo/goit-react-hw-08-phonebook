@@ -1,6 +1,7 @@
 import { Formik } from 'formik';
 import { FormStyle, Label, Input, ButtonAdd } from './Form.styled';
 import { TextField } from 'formik-mui';
+import { toast } from 'react-hot-toast';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { addContact } from 'redux/contacts/operations';
@@ -13,7 +14,7 @@ export const Form = () => {
   const handleSubmit = (values, { resetForm }) => {
     const dublicateContact = findDublicate(values, contactsList);
     dublicateContact
-      ? alert(`${values.name} or ${values.phone} is already in contacts`)
+      ? toast.error(`${values.name} or ${values.number} is already in contacts`)
       : dispatch(addContact(values));
 
     resetForm();
@@ -61,6 +62,9 @@ export const Form = () => {
             title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
             placeholder="Enter name"
             component={TextField}
+            label="Name"
+            fullWidth
+            margin="normal"
           />
         </Label>
         <Label htmlFor="number">
@@ -71,10 +75,15 @@ export const Form = () => {
             title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
             placeholder="Enter number"
             component={TextField}
+            label="Number"
+            fullWidth
+            margin="normal"
           />
         </Label>
 
-        <ButtonAdd type="submit">Add Contact</ButtonAdd>
+        <ButtonAdd type="submit" variant="contained">
+          Add Contact
+        </ButtonAdd>
       </FormStyle>
     </Formik>
   );

@@ -1,4 +1,17 @@
 import styled from '@emotion/styled';
+import { TextField } from '@mui/material';
+
+export const Form = styled.form`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border: 1px solid gray;
+  border-radius: 4px;
+  box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.75);
+  width: 340px;
+  margin-bottom: 15px;
+`;
 
 export const Label = styled.label`
   font-size: 20px;
@@ -8,7 +21,6 @@ export const Label = styled.label`
   gap: 8px;
 `;
 
-export const Input = styled.input`
-  height: 20px;
-  width: 200px;
+export const TextFieldStyle = styled(TextField)`
+  width: 300px;
 `;

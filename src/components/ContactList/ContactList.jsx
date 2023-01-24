@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types';
-import { List, Item, Name, Number, Button } from './ContactList.styled';
+import { Wrapper, List, Item, Name, Number, Btn } from './ContactList.styled';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { deleteContact } from 'redux/contacts/operations';
@@ -24,21 +24,28 @@ export const ContactList = () => {
   const visibleContacts = getFilterContacts();
 
   return (
-    <List>
-      {visibleContacts.length === 0 && <p>There is not any contacts</p>}
-      {visibleContacts.map(({ id, name, number }) => {
-        return (
-          <Item key={id}>
-            <Name>
-              {name}: <Number>{number}</Number>
-            </Name>
-            <Button type="button" onClick={() => handleDelete(id)}>
-              Delete
-            </Button>
-          </Item>
-        );
-      })}
-    </List>
+    <Wrapper>
+      <List>
+        {visibleContacts.length === 0 && <p>There is not any contacts</p>}
+        {visibleContacts.map(({ id, name, number }) => {
+          return (
+            <Item key={id}>
+              <Name>
+                {name}: <Number>{number}</Number>
+              </Name>
+              <Btn
+                type="button"
+                onClick={() => handleDelete(id)}
+                variant="outlined"
+                size="small"
+              >
+                Delete
+              </Btn>
+            </Item>
+          );
+        })}
+      </List>
+    </Wrapper>
   );
 };
 
