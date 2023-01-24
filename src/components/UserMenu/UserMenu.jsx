@@ -1,7 +1,7 @@
 import { useDispatch } from 'react-redux';
 import { logOut } from 'redux/auth/operations';
 import { useAuth } from 'hooks';
-import { Wrapper, UserName, Btn } from './UserMenu.styled';
+import { Wrapper, UserName, Btn, Span } from './UserMenu.styled';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
@@ -9,7 +9,9 @@ export const UserMenu = () => {
 
   return (
     <Wrapper>
-      <UserName>Welcome, {user.name}!</UserName>
+      <UserName>
+        Welcome, <Span>{user.name}!</Span>
+      </UserName>
       <Btn
         type="button"
         variant="contained"

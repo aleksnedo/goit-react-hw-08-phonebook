@@ -5,13 +5,11 @@ export const Loader = () => {
   return (
     <Wrapper>
       <ThreeDots
-        height="40"
-        width="40"
-        radius="8"
-        color="#4d4c4c"
+        height="80"
+        width="80"
+        radius="10"
+        color="#1976d2"
         ariaLabel="three-dots-loading"
-        wrapperStyle={{}}
-        wrapperClassName=""
         visible={true}
       />
     </Wrapper>

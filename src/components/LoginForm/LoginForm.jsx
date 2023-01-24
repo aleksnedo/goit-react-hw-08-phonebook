@@ -46,7 +46,7 @@ export const LoginForm = () => {
         </Btn>
       </Form>
       {error && (
-        <AlertStyle variant="filled" severity="error">
+        <AlertStyle variant="outlined" severity="error">
           Something wrong: Check your password and email or may be you are not
           registered user.
         </AlertStyle>
