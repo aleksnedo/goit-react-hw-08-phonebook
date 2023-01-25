@@ -10,7 +10,7 @@ export const FormStyle = styled(Form)`
   padding: 30px;
   border: 1px solid gray;
   border-radius: 4px;
-  box-shadow: 3px 3px 20px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 3px 3px 20px 10px #1976d275;
   margin-bottom: 15px;
   width: 340px;
 `;

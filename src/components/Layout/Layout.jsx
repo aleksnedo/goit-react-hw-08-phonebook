@@ -6,6 +6,15 @@ import { AppBar } from '../AppBar/AppBar';
 import { Container } from './Layout.styled';
 
 export const Layout = () => {
+  const ToastOptions = {
+    duration: 4000,
+    error: {
+      style: {
+        border: '3px solid #1976d2',
+      },
+    },
+  };
+
   return (
     <Container>
       <AppBar />
@@ -15,14 +24,7 @@ export const Layout = () => {
       <Toaster
         position="top-center"
         reverseOrder={false}
-        toastOptions={{
-          duration: 4000,
-          error: {
-            style: {
-              border: '2px solid #1976d2',
-            },
-          },
-        }}
+        toastOptions={ToastOptions}
       />
     </Container>
   );

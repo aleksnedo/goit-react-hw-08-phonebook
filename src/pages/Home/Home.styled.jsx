@@ -12,4 +12,5 @@ export const Banner = styled.h1`
   font-weight: 600;
   font-size: 50;
   margin-bottom: 20px;
+  text-shadow: 5px 3px 5px rgba(0, 0, 0, 0.75);
 `;
