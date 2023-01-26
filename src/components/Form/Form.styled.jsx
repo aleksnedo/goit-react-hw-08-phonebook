@@ -8,7 +8,7 @@ export const FormStyle = styled(Form)`
   align-items: center;
   gap: 30px;
   padding: 30px;
-  border: 1px solid gray;
+  border: 1px solid #1976d2;
   border-radius: 4px;
   box-shadow: 3px 3px 20px 10px #1976d275;
   margin-bottom: 15px;

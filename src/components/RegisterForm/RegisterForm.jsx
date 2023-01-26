@@ -3,7 +3,7 @@ import { register } from 'redux/auth/operations';
 import { selectRegisterError } from 'redux/auth/selectors';
 
 import { Form, Btn, AlertStyle } from './RegisterForm.styled';
-import { TextField } from '@mui/material';
+import { TextField, Stack } from '@mui/material';
 
 export const RegisterForm = () => {
   const dispatch = useDispatch();
@@ -57,10 +57,12 @@ export const RegisterForm = () => {
         </Btn>
       </Form>
       {error && (
-        <AlertStyle variant="outlined" severity="error">
-          Something wrong: Maybe a user with the same name or email already
-          exists.
-        </AlertStyle>
+        <Stack sx={{ width: '100%' }} spacing={2}>
+          <AlertStyle onClose={() => {}} variant="outlined" severity="error">
+            Something wrong: Maybe a user with the same name or email already
+            exists.
+          </AlertStyle>
+        </Stack>
       )}
     </>
   );

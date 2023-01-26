@@ -14,6 +14,7 @@ export const UserName = styled.p`
 export const Span = styled.span`
   color: #1976d2;
   font-weight: 800;
+  text-shadow: 3px 3px 2px #1976d275;
 `;
 
 export const Btn = styled(Button)`
