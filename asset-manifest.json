@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/goit-react-hw-08-phonebook/static/css/main.a6d7d3d2.css",
-    "main.js": "/goit-react-hw-08-phonebook/static/js/main.56128fec.js",
+    "main.js": "/goit-react-hw-08-phonebook/static/js/main.9dad949a.js",
     "static/js/485.2d471a12.chunk.js": "/goit-react-hw-08-phonebook/static/js/485.2d471a12.chunk.js",
-    "static/js/710.75000f2e.chunk.js": "/goit-react-hw-08-phonebook/static/js/710.75000f2e.chunk.js",
+    "static/js/427.4e52a257.chunk.js": "/goit-react-hw-08-phonebook/static/js/427.4e52a257.chunk.js",
     "static/js/284.30bfdc3f.chunk.js": "/goit-react-hw-08-phonebook/static/js/284.30bfdc3f.chunk.js",
     "static/js/821.692f3bce.chunk.js": "/goit-react-hw-08-phonebook/static/js/821.692f3bce.chunk.js",
     "static/js/270.b3c382c1.chunk.js": "/goit-react-hw-08-phonebook/static/js/270.b3c382c1.chunk.js",
@@ -12,9 +12,9 @@
     "static/js/971.fa893132.chunk.js": "/goit-react-hw-08-phonebook/static/js/971.fa893132.chunk.js",
     "index.html": "/goit-react-hw-08-phonebook/index.html",
     "main.a6d7d3d2.css.map": "/goit-react-hw-08-phonebook/static/css/main.a6d7d3d2.css.map",
-    "main.56128fec.js.map": "/goit-react-hw-08-phonebook/static/js/main.56128fec.js.map",
+    "main.9dad949a.js.map": "/goit-react-hw-08-phonebook/static/js/main.9dad949a.js.map",
     "485.2d471a12.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/485.2d471a12.chunk.js.map",
-    "710.75000f2e.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/710.75000f2e.chunk.js.map",
+    "427.4e52a257.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/427.4e52a257.chunk.js.map",
     "284.30bfdc3f.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/284.30bfdc3f.chunk.js.map",
     "821.692f3bce.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/821.692f3bce.chunk.js.map",
     "270.b3c382c1.chunk.js.map": "/goit-react-hw-08-phonebook/static/js/270.b3c382c1.chunk.js.map",
@@ -24,6 +24,6 @@
   },
   "entrypoints": [
     "static/css/main.a6d7d3d2.css",
-    "static/js/main.56128fec.js"
+    "static/js/main.9dad949a.js"
   ]
 }
